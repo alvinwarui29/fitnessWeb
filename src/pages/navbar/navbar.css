@@ -1,0 +1,36 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    background: var(--color-primary);
+    display: grid;
+    place-items: center;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 99;
+}
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav__toogle-btn{
+    display: none;
+}
+.logo{
+    width: 7rem;
+}
+.nav__links{
+    display: flex;
+    gap:3.5rem;
+    align-items: center;
+}
+.nav__links a{
+    transition: var(--transition);
+}
+.nav__links a:hover{
+    color:var(--color-secondary);
+
+}

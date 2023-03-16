@@ -7,7 +7,7 @@ import {FaBars} from 'react-icons/fa';
 const Navbar = () => {
   return (
     <nav>
-    <div className=".container nav__container">
+    <div className="container nav__container">
         <Link to="/" className="logo">
           <img src={Logo} alt="Logo Image"/>
         </Link>
