@@ -7,21 +7,23 @@ import Gallery from "./pages/gallery/Gallery";
 import Plans from "./pages/plans/Plans";
 import Trainers from "./pages/trainers/Trainers";
 import NotFound from "./pages/notfound/NotFound";
-import Navbar from "./pages/navbar/Navbar";
+import Navbar from "./components/navbar/Navbar";
 const App = () => {
   return (
     <div>
     <BrowserRouter>
         <Navbar/>
-    </BrowserRouter>
-        <Home/>
-        <About/>
-        <Contact/>
-        <Gallery/>
-        <Plans/>
-        <Trainers/>
-        <NotFound/>
-        
+    
+    <Routes>
+      <Route index element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/gallery' element={<Gallery/>}/>
+      <Route path='/plans' element={<Plans/>}/>
+      <Route path='/trainers' element={<Trainers/>}/>
+      <Route path='*' element={<NotFound/>}/>
+    </Routes>
+    </BrowserRouter>     
     </div>
   )
 }
